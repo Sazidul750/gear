@@ -43,7 +43,7 @@ ul {
 /* nav section end */
 /* banner section start */
 .banner {
-  padding: 60px 0;
+  padding-top: 60px;
   gap: 130px;
   justify-content: space-between;
 }
@@ -83,12 +83,24 @@ ul {
 }
 .banner-image img {
   width: 100%;
+  margin: 54px -23px;
 }
 /* banner section end */
 /* header part end */
 /* main part start */
-/* ... section start */
-/* .... section end */
+/* sponsor section start */
+.sponsor {
+  margin: 0 165px;
+  border: 1px solid rgba(128, 128, 128, 0.733);
+}
+.sponsor-image {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 61px;
+}
+/* sponsor section end */
 /* main part end */
 /* footer part start */
 /* footer part end */
@@ -111,37 +123,52 @@ ul {
   }
 
   .banner {
-   padding: 22px 0;
-   gap: 15px;
+    padding: 22px 0;
+    gap: 15px;
     flex-direction: column-reverse;
-   justify-content: center;
-   align-items: center;
-    
+    justify-content: center;
+    align-items: center;
   }
-  .banner-image{
+  .banner-image {
     width: 260px;
-   height: 260px;
-   background-image: url(./images/Circle\ design.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+    height: 260px;
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
- 
+
   .banner-image img {
     width: 200px;
     height: 190px;
     margin: 32px 46px 0px 4px;
-}
- .banner-content{
-    margin:  0;
+  }
+  .banner-content {
+    margin: 0;
     max-width: 404px;
     padding: 5px;
     text-align: center;
- }
- .banner-title{
+  }
+  .banner-title {
     font-size: 2rem;
     line-height: 44px;
- }
+  }
 }
 /* header part end */
+/* main part start */
+.sponsor {
+  margin: 0;
+  border: none;
+}
+.sponsor-image {
+    grid-template-columns: repeat(4,1fr);
+    gap: 19px;
+    padding: 36px 26px;
+    align-items: center;
+    justify-content: center;
+}
+.sponsor-image img{
+    width: 100%;
+}
+/* main part end */
 /* mobile responsive part end */
