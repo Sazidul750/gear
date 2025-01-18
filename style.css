@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.poppins-thin-font {
+  font-family: "Poppins", serif;
+  font-style: normal;
+}
+
+/* common css start */
+.display-flex {
+  display: flex;
+}
+/* common css end */
+
+/* header part start */
+header {
+  padding: 90px 120px;
+  margin: 0 auto;
+}
+/* nav section start */
+nav,
+ul {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #3a3a3a;
+}
+ul li a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #3a3a3a;
+}
+ul {
+  gap: 30px;
+}
+
+/* nav section end */
+/* banner section start */
+.banner {
+  padding: 60px 0;
+  gap: 130px;
+  justify-content: space-between;
+}
+.banner-content {
+  max-width: 580px;
+  margin: 70px 0;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 3.3rem;
+  line-height: 70px;
+  color: #3a3a3a;
+}
+.banner-info {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #3a3a3a;
+  margin: 16px 0;
+}
+.banner-btn {
+  padding: 10px 24px;
+  border: none;
+  background-color: #e02c6d;
+  border-radius: 41px;
+  color: #ffff;
+}
+.banner-btn i {
+  margin-left: 8px;
+}
+
+.banner-image {
+  background-image: url(./images/Circle\ design.svg);
+  width: 475px;
+  height: 475px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner-image img {
+  width: 100%;
+}
+/* banner section end */
+/* header part end */
+/* main part start */
+/* ... section start */
+/* .... section end */
+/* main part end */
+/* footer part start */
+/* footer part end */
+
+/* mobile responsive part start */
+/* header part start */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 0;
+    margin: 0;
+  }
+  nav,
+  ul {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
+  .nav-logo {
+    width: 244px;
+  }
+
+  .banner {
+   padding: 22px 0;
+   gap: 15px;
+    flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+    
+  }
+  .banner-image{
+    width: 260px;
+   height: 260px;
+   background-image: url(./images/Circle\ design.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+  }
+ 
+  .banner-image img {
+    width: 200px;
+    height: 190px;
+    margin: 32px 46px 0px 4px;
+}
+ .banner-content{
+    margin:  0;
+    max-width: 404px;
+    padding: 5px;
+    text-align: center;
+ }
+ .banner-title{
+    font-size: 2rem;
+    line-height: 44px;
+ }
+}
+/* header part end */
+/* mobile responsive part end */
